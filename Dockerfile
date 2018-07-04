@@ -27,8 +27,5 @@ ADD run.sh /usr/bin/
 RUN chmod 777 /usr/bin/run.sh
 RUN mkdir /run/apache2/
 
-WORKDIR "/tmp"
-RUN ng new cc
-
 EXPOSE 80
 ENTRYPOINT ["/usr/bin/run.sh"]
